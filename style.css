@@ -4,12 +4,14 @@ body{
     box-sizing: border-box;
     font-family: 'Lora', serif;
     scroll-behavior: smooth;
-    background-color: beige;
+    background-color: #b6ac97;
 }
 
 p{
     font-weight: 300;
-    color: #1111;
+    color: black;
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
 }
 
 header{
@@ -24,8 +26,7 @@ header{
     align-items: center;
     transition: 0.5s;
     font-family: 'Montserrat', sans-serif;
-    background-color: white;
-    opacity: 0.7;
+    background-color: #392c1e;
 }
 
 .logo {
@@ -33,6 +34,10 @@ header{
     font-weight: bold;
     font-size: 2em;
     text-decoration: none;
+}
+
+.logo:hover{
+    color: #b6ac97;
 }
 
 .navbar {
@@ -53,20 +58,21 @@ header{
 
 .btn-reserve {
     padding: 10px 20px;
-    background: orangered;
+    background: #906427;
     margin-top: -10px;
     text-transform: uppercase;
+    border-radius: 3px;
 
 }
 
 .btn-reserve:hover{
-    background: red;
+    background: #b6ac97;
     transition: ease-out;
 }
 
 header .navbar li a:hover{
-    color: orangered;
-    border-bottom: 2px solid orangered;
+    color: #906427;
+    border-bottom: 2px solid #906427;
 }
 
 .banniere{
@@ -100,7 +106,7 @@ header .navbar li a:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     color: black;
-    background: orangered;
+    background: #906427;
     padding: 10px 20px;
     display: inline-block;
     margin-top: 20px;
@@ -120,7 +126,7 @@ header .navbar li a:hover{
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     color: black;
-    background: orangered;
+    background: #906427;
     padding: 10px 20px;
     display: inline-block;
     margin-top: 20px;
@@ -180,7 +186,7 @@ section{
     ont-family: 'Montserrat', sans-serif;
     font-size: 1em;
     color: black;
-    background: orangered;
+    background: #906427;
     padding: 10px 20px;
     display: inline-block;
     margin-top: 20px;
@@ -196,3 +202,83 @@ section{
     letter-spacing: 4px;
 }
 
+.menu{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: beige;
+}
+
+.card1{
+    display: flex;
+    width: 30%;
+    box-shadow: 2px solid black;
+    background-color: chocolate;
+    border-radius: 5px;
+}
+
+.card2{
+    display: flex;
+    width: 30%;
+    background-color: chocolate;
+    border-radius: 5px;
+}
+
+.card3{
+    display: flex;
+    width: 30%;
+    background-color: chocolate;
+    border-radius: 5px;
+}
+
+.titre-menu{
+    color: black;
+    font-size: 2em;
+    font-weight: 300px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+.equipe{
+    margin-top: -100px; 
+}
+
+.equipe .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    background-image: url(image/bois.jpg);
+    background-size: cover;
+}
+
+.equipe .contenu .box{
+    width: 250px;
+    margin: 15px;
+}
+
+.equipe .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.equipe .contenu .box h3{
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
