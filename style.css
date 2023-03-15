@@ -87,7 +87,7 @@ header .navbar li a:hover{
 }
 
 .banniere .contenu {
-    max-width: 70%;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -98,8 +98,8 @@ header .navbar li a:hover{
 }
 
 .contenu p:nth-child(2){
-    color: white;
-    font-size: 1.2em;
+    color:black;
+    font-size: 1.5em;
 }
 
 .btn1 {
@@ -281,4 +281,84 @@ section{
     font-weight: 400;
     text-align: center;
     font-family: 'Lora', serif;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    margin-top: -100px;
+    justify-content: space-around;
+}
+
+.horaires{
+    width: 40%;
+}
+
+.cardhoraires {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 80%;
+}
+  
+.cardhoraires p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+  
+.cardhoraires ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.cardhoraires li {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+  
+.cardhoraires li strong {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+}
+  
+.cardhoraires hr {
+    border-top: 1px solid black;
+}
+
+.adresse {
+    width: 40%;
+}
+
+.infos .contenu h2{
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #392c1e;
+    color: #906427;
+    border-top: 3px solid #906427;;
+}
+
+footer .contact p{
+    color: #906427;
+    font-weight: 300;
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+
+}
+
+#facebook{
+    color: rgb(56, 56, 224);
+}
+
+#insta{
+    color: rgb(151, 58, 143);
+}
+
+#twitter{
+    color: rgb(84, 201, 236);
 }
