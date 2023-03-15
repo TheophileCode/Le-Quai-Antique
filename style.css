@@ -1,0 +1,198 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    scroll-behavior: smooth;
+    background-color: beige;
+}
+
+p{
+    font-weight: 300;
+    color: #1111;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    opacity: 0.7;
+}
+
+.logo {
+    color: #000000;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.btn-reserve {
+    padding: 10px 20px;
+    background: orangered;
+    margin-top: -10px;
+    text-transform: uppercase;
+
+}
+
+.btn-reserve:hover{
+    background: red;
+    transition: ease-out;
+}
+
+header .navbar li a:hover{
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image/ArrierePlan.jpg);
+    background-size: cover;
+}
+
+.banniere .contenu {
+    max-width: 70%;
+    text-align: center;
+}
+
+.banniere .contenu .h2{
+    color: white;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.contenu p:nth-child(2){
+    color: white;
+    font-size: 1.2em;
+}
+
+.btn1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: black;
+    background: orangered;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+
+.btn1:hover{
+    letter-spacing: 4px;
+}
+
+.btn2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: black;
+    background: orangered;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+
+.btn2:hover{
+    letter-spacing: 4px;
+}
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+
+.titre-texte{
+    color: black;
+    font-size: 2em;
+    font-weight: 300px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+.row .col50 p{
+    margin-bottom: 20px;
+}
+
+.row .col50 img{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.row .col50 .btn-carte {
+    ont-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: black;
+    background: orangered;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+    border-radius: 2px;
+}
+
+.row .col50 .btn-carte:hover{
+    letter-spacing: 4px;
+}
+
