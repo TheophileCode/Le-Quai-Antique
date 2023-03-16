@@ -17,23 +17,28 @@
 <body>   
     <header id="main-header">
         <a href="index.html" class="logo">Le Quai Antique</a>
-        <ul class="navbar">
+        <ul class="nav-links">
             <li><a href="">Acceuil</a></li>
-            <li><a href="">Notre carte</a></li>
+            <li><a href="">Carte</a></li>
             <li><a href="">Menu</a></li>
-            <li><a href="">Nos horraires</a></li>
+            <li ><a href="" >Horraires</a></li>
             <li><a href="">Contact</a></li>
             <a href="" class="btn-reserve">Reserver</a>
         </ul>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </header>
-    <section class="banniere" id="banniere">
+    <div class="banniere" id="banniere">
         <div class="contenu">
             <h2>Des grands plats</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae sunt quo suscipit adipisci dicta asperiores deserunt iusto minima accusantium voluptates ad possimus exercitationem, reprehenderit distinctio aperiam libero? Dolorum, debitis quam.</p>
             <a href="" class="btn1">Notre carte</a>
             <a href="" class="btn2">Reservation</a>    
         </div>
-    </section>
+    </div>
     <section class="aPropos" id="aPropos">
         <div class="row">
             <div class="col50">
@@ -65,52 +70,53 @@
             </div>
         </div>
     </section>
-    <section class="menu" id="menu">
-            <div class="titre-menu">
-                <h2>Nos menu</h2>
-            </div>
-            <div class="card">
-                <div class="card1">
-                    <div>
-                        <img src="image/test.jpg" class="card-img-top">
-                        <div class="card-body">
-                        <h5 class="card-title">Menu degustation</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Entrée : </li>
-                            <li class="list-group-item">Plat : </li>
-                            <li class="list-group-item">Dessert : </li>
-                        </ul></div>
-                    </div>
-                </div>
-                <div class="card2">
-                    <div>
-                        <img src="image/test.jpg" class="card-img-top">
-                        <div class="card-body">
-                        <h5 class="card-title">Menu degustation</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Entrée : </li>
-                            <li class="list-group-item">Plat : </li>
-                            <li class="list-group-item">Dessert : </li>
-                        </ul></div>
-                    </div>
-                </div>
-                <div class="card3">
-                    <div>
-                        <img src="image/test.jpg" class="card-img-top">
-                        <div class="card-body">
-                        <h5 class="card-title">Menu degustation</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Entrée : </li>
-                            <li class="list-group-item">Plat : </li>
-                            <li class="list-group-item">Dessert : </li>
-                        </ul></div>
-                    </div>
+    <div class="menu" id="menu">
+        <div class="titre-menu">
+            <h2>Nos menu</h2>
+        </div>
+          <div class="card">
+            <div class="card1">
+                <div>
+                    <img src="image/test.jpg" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title">Menu degustation</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Entrée : </li>
+                        <li class="list-group-item">Plat : </li>
+                        <li class="list-group-item">Dessert : </li>
+                    </ul>
                 </div>
             </div>
-    </section>
+          </div>
+            <div class="card2">
+                <div>
+                    <img src="image/test.jpg" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title">Menu degustation</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Entrée : </li>
+                        <li class="list-group-item">Plat : </li>
+                        <li class="list-group-item">Dessert : </li>
+                    </ul></div>
+                </div>
+            </div>
+            <div class="card3">
+                <div>
+                    <img src="image/test.jpg" class="card-img-top">
+                    <div class="card-body">
+                    <h5 class="card-title">Menu degustation</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Entrée : </li>
+                        <li class="list-group-item">Plat : </li>
+                        <li class="list-group-item">Dessert : </li>
+                    </ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="equipe" id="equipe">
         <div class="titre">
             <h2 class="titre-texte">Notre equipe</h2>
@@ -198,6 +204,16 @@
             </div>
         </div>    
     </footer>
+
+    <script type="module">
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+  
+    hamburgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('nav-active');
+    });
+    </script>
+
     <script type="module">
        var prevScrollpos = window.pageYOffset;
        window.onscroll = function() {

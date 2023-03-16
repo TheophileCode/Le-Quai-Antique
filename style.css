@@ -3,6 +3,7 @@ body{
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Lora', serif;
+    font-size: 16px;
     scroll-behavior: smooth;
     background-color: #b6ac97;
 }
@@ -14,6 +15,7 @@ p{
     font-size: 1.2em;
 }
 
+/* Partie header */
 header{
     position: fixed;
     top: 0%;
@@ -41,16 +43,16 @@ header{
     color: #b6ac97;
 }
 
-.navbar {
+.nav-links {
     display: flex;
     position: relative;
 }
 
-.navbar li{
+.nav-links li{
     list-style: none;
 }
 
-.navbar a{
+.nav-links a{
     color: black;
     text-decoration: none;
     margin-left: 30px;
@@ -71,15 +73,49 @@ header{
     transition: ease-out;
 }
 
-header .navbar li a:hover{
-    color: #906427;
+header .nav-links li a:hover{
+    color: #b6ac97;
     border-bottom: 2px solid #906427;
 }
 
-@media (max-widht 1000px){
-    
+.hamburger-menu {
+  display: none;
 }
 
+.hamburger-menu .bar:hover{
+  background-color: #b6ac97;
+}
+
+@media screen and (max-width: 1030px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+  }
+
+  .nav-active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-reserve {
+   display: none;
+  }
+
+  header{
+    background-color: #392c1e;
+    height: 130px;
+  }
+}
 
 /*premier contenu*/
 .banniere{
@@ -91,22 +127,24 @@ header .navbar li a:hover{
     align-items: center;
     background-image: url(image/ArrierePlan.jpg);
     background-size: cover;
+    padding: 40px 0 0 0;
 }
 
 .banniere .contenu {
-    max-width: 80%;
+    max-width: 100%;
     text-align: center;
+    padding-top: 100px;
 }
 
-.banniere .contenu .h2{
-    color: white;
+.banniere .contenu h2{
+    color: #000000;
     font-size: 3em;
     text-transform: capitalize;
 }
 
 .contenu p:nth-child(2){
     color:black;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .btn1 {
@@ -149,8 +187,19 @@ header .navbar li a:hover{
     letter-spacing: 4px;
 }
 
+/*Deuxieme section*/
 section{
     padding: 100px;
+}
+
+.aPropos{
+    padding: 100px 10px 20px 20px;
+}
+
+
+
+.carte{
+    padding: 100px 10px 20px 20px;
 }
 
 .row{
@@ -158,46 +207,30 @@ section{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.row .col50{
+.col50{
     position: relative;
     width: 48%;
     justify-content: center;
     align-items: center;
 }
 
-@media (max-width: 991px){
-    .row .col50{
-        position: relative;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .row{
-        flex-direction: column;
-    }
-}
-
 .row .col50 h2{
-    margin-bottom: 20px;
-}
-
-.titre-texte{
-    color: black;
-    font-size: 2em;
-    font-weight: 300px;
+    font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
+    color: black;
 }
 
 .row .col50 p{
     margin-bottom: 20px;
+    font-family: 'Lora', serif;
 }
 
 .row .col50 img{
-    height: 500px;
+    height: 300px;
     width: 100%;
     position: relative;
 }
@@ -208,56 +241,60 @@ section{
     color: black;
     background: #906427;
     padding: 10px 20px;
-    display: inline-block;
     margin-top: 20px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
     transition: 0.5s;
-    margin-left: 10px;
     border-radius: 2px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
 
 .row .col50 .btn-carte:hover{
     letter-spacing: 4px;
 }
 
+@media (max-width: 1000px){
+    .col50{
+        position: relative;
+        width: 100%;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*troisieme section*/
 .menu{
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 100px 0px 100px 0;
 }
 
 .card{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    background-color: beige;
+    justify-content: space-around;
+    background-color: #b6ac97;
+    border: none;
+    align-items: center;
 }
 
-.card1{
-    display: flex;
-    width: 30%;
-    box-shadow: 2px solid black;
-    background-color: chocolate;
-    border-radius: 5px;
-}
-
-.card2{
-    display: flex;
-    width: 30%;
-    background-color: chocolate;
-    border-radius: 5px;
-}
-
-.card3{
-    display: flex;
-    width: 30%;
-    background-color: chocolate;
-    border-radius: 5px;
+.card1, .card2, .card3 {
+  display: flex;
+  flex-direction: center;
+  text-align: center;
+  width: 30%;
+  box-shadow: 2px solid black;
+  border-radius: 5px;
+  align-items: center;
+  border: 3px solid #906427;
 }
 
 .titre-menu{
@@ -267,6 +304,46 @@ section{
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     padding-bottom: 20px;
+}
+
+.card-img-top{
+  width: 100%;
+  border-radius: 2px;
+}
+
+.titre-menu h2{
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    color: black;
+}
+
+.list-group-item{
+    background-color: #b6ac97;
+    color: #000000;
+}
+
+@media (max-width: 1000px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #b6ac97;
+        border: none;
+        align-items: center;
+    }
+
+    .card1, .card2, .card3 {
+        display: flex;
+        flex-direction: center;
+        text-align: center;
+        width: 80%;
+        box-shadow: 2px solid black;
+        border-radius: 5px;
+        align-items: center;
+        border: 3px solid #906427;
+        margin: 30px;
+      }
 }
 
 .equipe{
@@ -438,5 +515,4 @@ footer .contact p{
     .information .contenu h2{
         margin-left: 15px;
      }
-
 }
