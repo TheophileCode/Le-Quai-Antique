@@ -76,6 +76,12 @@ header .navbar li a:hover{
     border-bottom: 2px solid #906427;
 }
 
+@media (max-widht 1000px){
+    
+}
+
+
+/*premier contenu*/
 .banniere{
     position: relative;
     width: 100%;
@@ -88,7 +94,7 @@ header .navbar li a:hover{
 }
 
 .banniere .contenu {
-    max-width: 100%;
+    max-width: 80%;
     text-align: center;
 }
 
@@ -161,6 +167,19 @@ section{
     align-items: center;
 }
 
+@media (max-width: 991px){
+    .row .col50{
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+}
+
 .row .col50 h2{
     margin-bottom: 20px;
 }
@@ -184,7 +203,7 @@ section{
 }
 
 .row .col50 .btn-carte {
-    ont-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     color: black;
     background: #906427;
@@ -284,11 +303,14 @@ section{
     font-family: 'Lora', serif;
 }
 
-.infos{
+/**/
+.information{
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: -100px;
     justify-content: space-around;
+    max-width: 100%;
 }
 
 .horaires{
@@ -301,7 +323,8 @@ section{
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 20px;
     margin: 20px;
-    max-width: 80%;
+    width: 100%;
+    height: 85%;
 }
   
 .cardhoraires p {
@@ -334,8 +357,8 @@ section{
     width: 40%;
 }
 
-.infos .contenu h2{
-    margin-left: 20px;
+.information .contenu h2{
+   margin-left: 30px;
 }
 
 footer {
@@ -362,4 +385,58 @@ footer .contact p{
 
 #twitter{
     color: rgb(84, 201, 236);
+}
+
+#copyright{
+    text-decoration: none;
+}
+
+@media (max-width: 1000px){
+    .information{
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .adresse {
+        width: 100%;
+        margin-top: 100px;
+
+    }
+
+    .horaires{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px){
+    .information{
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .adresse {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .horaires{
+        width: 100%;
+    }
+
+    .cardhoraires{
+        width: 100%;
+    }
+
+    .information .contenu h2{
+        margin-left: 15px;
+     }
+
 }
