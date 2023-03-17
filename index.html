@@ -15,14 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>   
-    <header id="main-header">
+    <header id="main-header"> 
         <a href="index.html" class="logo">Le Quai Antique</a>
         <ul class="nav-links">
-            <li><a href="#aPropos">Acceuil</a></li>
-            <li><a href="#carte">Carte</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li ><a href="#information" >Horaires</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#aPropos">Accueil</a></li>
+            <li><a href="index.html#carte">Carte</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li ><a href="index.html#information" >Horaires</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
             <a href="" class="btn-reserve">Reserver</a>
         </ul>
         <div class="hamburger-menu">
@@ -66,7 +66,7 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non cum consequuntur ab officia doloribus eaque, aspernatur quo fugiat reprehenderit porro nemo qui, quod perspiciatis fuga. Ipsa quos accusamus sequi adipisci!</p>
                 <br>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non cum consequuntur ab officia doloribus eaque, aspernatur quo fugiat reprehenderit porro nemo qui, quod perspiciatis fuga. Ipsa quos accusamus sequi adipisci!</p>
-                <a href="" class="btn-carte">Notre carte en details</a>
+                <a href="carte.html" class="btn-carte">Notre carte en details</a>
             </div>
         </div>
     </section>
@@ -74,7 +74,7 @@
         <div class="titre-menu">
             <h2 class="titre-texte">Nos menu</h2>
         </div>
-          <div class="card">
+          <div class="cardcard">
             <div class="card1">
                 <div>
                     <img title="Menu degustation" src="image/MenuDegustation1.jpg" class="card-img-top">
@@ -205,27 +205,6 @@
         </div>    
     </footer>
 
-    <script type="module">
-        const hamburgerMenu = document.querySelector('.hamburger-menu');
-        const navLinks = document.querySelector('.nav-links');
-  
-    hamburgerMenu.addEventListener('click', () => {
-    navLinks.classList.toggle('nav-active');
-    });
-    </script>
-
-    <script type="module">
-       var prevScrollpos = window.pageYOffset;
-       window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-  
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("main-header").style.top = "0";
-        } else {
-            document.getElementById("main-header").style.top = "-200px";
-        }
-        prevScrollpos = currentScrollPos;
-    } 
-    </script>
+    <script src="script.js"></script> 
 </body>
 </html>

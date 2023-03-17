@@ -239,7 +239,7 @@ section{
 
 .row .col50 img{
     height: 300px;
-    width: 100%;
+    width: 80%;
     position: relative;
 }
 
@@ -285,7 +285,7 @@ section{
     padding: 100px 0px 100px 0;
 }
 
-.card{
+.cardcard{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -317,7 +317,7 @@ section{
 }
 
 @media (max-width: 1000px){
-    .card{
+    .cardcard{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -440,7 +440,9 @@ section{
 footer {
     background-color: #392c1e;
     color: #906427;
-    border-top: 3px solid #906427;;
+    border-top: 3px solid #906427;
+    margin-top: 100px;
+
 }
 
 footer .contact p{
@@ -504,4 +506,128 @@ footer .contact p{
     .information .contenu h2{
         margin-left: 15px;
      }
+}
+
+/* carte.html*/
+
+.title-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 0 100px 0;
+}
+  
+.title-card h2{
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: underline overline #000000;
+}
+
+#toggle {
+    padding: 10px 20px;
+    background: #906427;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+#toggle:hover{
+    transition: ease-out;
+    letter-spacing: 3px;
+}
+
+.card {
+    position: relative;
+    width: 30%;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    border: 5px solid #906427;
+}
+    
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+}
+    
+.card-front {
+    background-color: black;
+}
+    
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #ddd;
+}
+    
+.card-back h2,
+.card-back p {
+    margin: 10px;
+}
+    
+.card-back h2 {
+    font-size: 1.5rem;
+}
+    
+.card:hover {
+    transform: rotateY(180deg);
+}
+  
+.imagecarte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+  
+.card .back {
+    display: none;
+}
+  
+.card.flip {
+    transform: rotateY(180deg);
+}
+  
+.cardimg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+@media (max-width: 1000px){
+    .imagecarte {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        width: 45%;
+    }
+
+}
+
+@media (max-width: 600px){
+    .imagecarte {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        width: 80%;
+    }
+
 }
